@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa</title>
+    <style>
+        body{
+            background: #000;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            overflow: hidden; /* To hide any potential scroll bars */
+        }
+
+        .screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40vh; /* Make sure each screen takes the full height */
+            overflow: hidden; /* Hide any content overflow */
+        }
+
+        iframe {
+            width: 200vh; /* Adjusted to be twice the height of the viewport */
+            height: 100vw; /* Adjusted to be equal to the width of the viewport */
+            transform-origin: top left; /* Set the rotation origin to the top-left corner */
+            transform: rotate(90deg) translateY(-100%); /* Rotate and move up by the height of the iframe */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="screen" id="screen1"><iframe
+                src="https://eyes.nasa.gov/apps/solar-system/#/earth"
+                frameborder="0"></iframe></div>
+        <div class="screen" id="screen2"><iframe
+                src="https://eyes.nasa.gov/apps/solar-system/#/earth"
+                frameborder="0"></iframe></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   margin: 0;
+   /* overflow: hidden; */
+   background: #000000;
+ }
+
+ .main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100vw;
+   height: 100vh;
+   margin: 0% 0;
+   padding: 2%;
+ }
+
+ .main div {
+   transform: rotate(90deg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 25rem;
+
+ }
